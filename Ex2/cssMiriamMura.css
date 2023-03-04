@@ -1,6 +1,6 @@
 @font-face {
     font-family: "SFUIText-Medium";
-    src: url("San-Francisco/SanFrancisco/SFUIText/SFUIText-Light.otf") format("OpenType");
+     src: url("fonts/SanFrancisco/SFUIText-Light.otf") format("OpenType");
 }
 
 body {
