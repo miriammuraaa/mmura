@@ -174,7 +174,7 @@ footer div {
 
 @font-face {
     font-family: "SFUIText-Medium";
-    src: url("San-Francisco/SanFrancisco/SFUIText/SFUIText-Medium.otf") format("OpenType");
+     src: url("fonts/SanFrancisco/SFUIText-Medium.otf") format("OpenType");
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
