@@ -1,14 +1,24 @@
 <html>
-  <head>
-	<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  </head>
-  <body>
-	<a-scene>
-  	<a-sky color="#005"></a-sky>
-  	<a-sphere position="0 2 -5" radius="1" color="#ff0"></a-sphere>
-  	<a-sphere position="-5 2 0" radius="1" color="#0ff"></a-sphere>
-  	<a-sphere position="0 2 5" radius="1" color="#f00"></a-sphere>
-  	<a-sphere position="5 2 -5" radius="1" color="#0f0"></a-sphere>
-	</a-scene>
-  </body>
+ <head>
+   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+ </head>
+ <body>
+   <a-assets>
+     <img id="imgSortida" src="assets/entragroc.png" >
+     <img id="imgFantasma" src="assets/fantasma.png" >
+   </a-assets>
+
+  
+   <a-scene>
+     <a-sky color="#005"></a-sky>
+     <a-sphere position="0 2 -5" radius="1" color="#ff0"></a-sphere>
+     <a-sphere position="-5 2 0" radius="1" color="#0ff"></a-sphere>
+     <a-sphere position="0 2 5" radius="1" color="#f00"></a-sphere>
+     <a-sphere position="5 2 -5" radius="1"  src="#imgFantasma"
+               animation="property: rotation; dur: 6000;
+                      to: 0 360 0; loop: true">         
+      </a-sphere>
+     <a-plane position="-2 2 -6" src="#imgSortida" transparent="true"></a-plane>
+   </a-scene>
+ </body>
 </html>
