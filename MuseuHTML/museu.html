@@ -1,52 +1,14 @@
+<!DOCTYPE html>
 <html>
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script>
-        AFRAME.registerComponent("mylink", {
-        init: function() {  
-         this.el.addEventListener("click", (e) => {              
-            window.location = this.data.href;      
-           })
-        }
-      })
-    </script>
-
   </head>
   <body>
-  <a-scene cursor="rayOrigin: mouse">
-    <a-assets>
-      <img id="imgSortida" src="assets/entragroc.png" >
-      <img id="imgFantasma" src="assets/fantasma.png" >
-      <img id="imgCasa" src="assets/casamaldita.jpg" >
-      <a-asset-item id="dracula" src="assets/dracula/scene.gltf"></a-asset-item>
-    </a-assets>
-   
-    <a-entity camera look-controls wasd-controls="false">
-    <!-- fuseTimeout = el temps que triga en fer click des de que es posiciona sobre un objecte-->
-     <a-entity cursor="fuse: true; fuseTimeout: 2000"
-           position="0 0 -1"
-           geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-           material="color: red; shader: flat"
-           animation="property: components.material.material.color;
-                 type: color;
-                 to: white;
-                 dur: 1000;
-                 dir: alternate;
-                 loop: true">
-     </a-entity>
-    </a-entity>
-
-   
-   
-      <a-sky src="#imgCasa"></a-sky>
-      <a-sphere position="5 2 -5" radius="1"  src="#imgFantasma"
-                animation="property: rotation; dur: 10000;
-                       to: 0 360 0; loop: true">          
-       </a-sphere>
-      <a-entity gltf-model="#dracula" position="0 -3.5 -5" scale="0.02 0.02 0.02"
-                animation="property: position; dur: 2000; from: 0 -3.5 -5; to: 0 -3 -5; dir: alternate; loop: true">        
-      </a-entity>
-      <a-plane position="-1.5 0 1.5" src="#imgSortida" rotation="0 150 0"  transparent="true" mylink="href: https://www.wikipedia.org/;"></a-plane>
+    <a-scene>
+        <a-assets>
+             <a-asset-item id="sala" src="sala/scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="#sala" position="0 0 0" rotation="0 0 0" scale="1 1 1"></a-entity>
     </a-scene>
   </body>
 </html>

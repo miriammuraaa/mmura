@@ -1,0 +1,11 @@
+Model Information:
+* title:	Carpet Tile VR Experience
+* source:	https://sketchfab.com/3d-models/carpet-tile-vr-experience-7d00bcc9eae849c0b608ce603def7fde
+* author:	Aaron Openshaw (https://sketchfab.com/aaronopenshaw)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Carpet Tile VR Experience" (https://sketchfab.com/3d-models/carpet-tile-vr-experience-7d00bcc9eae849c0b608ce603def7fde) by Aaron Openshaw (https://sketchfab.com/aaronopenshaw) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
