@@ -3,12 +3,41 @@
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script>
-        AFRAME.registerComponent("faigclick", {
+        AFRAME.registerComponent("faigclick1", {
         init: function() {  
          this.el.addEventListener("click", (e) => {  
 		//busquem l’element que té com a ide panel
-            var sceneEl = document.querySelector('#panel');
-		 var scene = document.querySelector('#bola');
+            var sceneEl = document.querySelector('#panel1');
+		 var scene = document.querySelector('#bola1');
+		//el fem visible
+            sceneEl.setAttribute('visible', true); 
+		 scene.setAttribute('visible', false);
+           })
+        }
+      })
+    </script>
+	  <script>
+        AFRAME.registerComponent("faigclick2", {
+        init: function() {  
+         this.el.addEventListener("click", (e) => {  
+		//busquem l’element que té com a ide panel
+            var sceneEl = document.querySelector('#panel2');
+		 var scene = document.querySelector('#bola2');
+		//el fem visible
+            sceneEl.setAttribute('visible', true); 
+		 scene.setAttribute('visible', false);
+           })
+        }
+      })
+    </script>
+	   </script>
+	  <script>
+        AFRAME.registerComponent("faigclick3", {
+        init: function() {  
+         this.el.addEventListener("click", (e) => {  
+		//busquem l’element que té com a ide panel
+            var sceneEl = document.querySelector('#panel3');
+		 var scene = document.querySelector('#bola3');
 		//el fem visible
             sceneEl.setAttribute('visible', true); 
 		 scene.setAttribute('visible', false);
@@ -50,17 +79,17 @@
       <a-entity gltf-model="#presBanca" position="0 -1 7" rotation="0 90 0" scale="0.017 0.017 0.017"></a-entity>
       <a-entity gltf-model="#spider" position="3 -1 3.5" rotation="0 220 0" scale="0.7 0.7 0.7" animation-mixer="clip: animations; loop: repeat;"></a-entity>
       <a-entity gltf-model="#shrek" position="3.5 -1 -9" rotation="0 -40 0" scale="0.7 0.7 0.7" animation-mixer="clip: animations; loop: repeat;"></a-entity>
-      <a-plane id="panel" src="#1" scale="3 2 1" position="5.764 1.144 -4.966" rotation="0 -40.000 0" visible="false"></a-plane>
-	<a-sphere id="bola" position="5.764 1.144 -4.966" radius="1"  src="#1"
-               animation="property: position; dur: 2000; from: 5.764 1.144 -4.966; to: 5.764 1.244 -4.966; dir: alternate; loop: true" visible="true" faigclick>         
+      <a-plane id="panel1" src="#1" scale="3 2 1" position="5.764 1.144 -4.966" rotation="0 -40.000 0" visible="false"></a-plane>
+	<a-sphere id="bola1" position="5.764 1.144 -4.966" radius="1"  src="#1"
+               animation="property: position; dur: 2000; from: 5.764 1.144 -4.966; to: 5.764 1.244 -4.966; dir: alternate; loop: true" visible="true" faigclick1>         
       </a-sphere>
-      <a-plane id="panel" src="#2" scale="3 2 1" position="-5 1.514 0" rotation="0 90.000 0" visible="false"></a-plane>
-<a-sphere id="bola" position="-5 1.514 0" radius="1"  src="#2"
-               animation="property: position; dur: 2000; from: -5 1.514 0; to: -5 1.614 0; dir: alternate; loop: true" visible="true" faigclick>         
+      <a-plane id="panel2" src="#2" scale="3 2 1" position="-5 1.514 0" rotation="0 90.000 0" visible="false"></a-plane>
+<a-sphere id="bola2" position="-5 1.514 0" radius="1"  src="#2"
+               animation="property: position; dur: 2000; from: -5 1.514 0; to: -5 1.614 0; dir: alternate; loop: true" visible="true" faigclick2>         
       </a-sphere>
-      <a-plane id="panel" src="#3" scale="3 2 1" position="3.661 1.027 6.221" rotation="0 180.000 0" visible="false"></a-plane>
-<a-sphere id="bola" position="3.661 1.027 6.221" radius="1"  src="#3"
-               animation="property: position; dur: 2000; from: 3.661 1.027 6.221; to: 3.661 1.127 6.221; dir: alternate; loop: true" visible="true" faigclick>         
+      <a-plane id="panel3" src="#3" scale="3 2 1" position="3.661 1.027 6.221" rotation="0 180.000 0" visible="false"></a-plane>
+<a-sphere id="bola3" position="3.661 1.027 6.221" radius="1"  src="#3"
+               animation="property: position; dur: 2000; from: 3.661 1.027 6.221; to: 3.661 1.127 6.221; dir: alternate; loop: true" visible="true" faigclick3>         
       </a-sphere>
     </a-scene>
   </body>
