@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "SFUIText-Medium";
+    background-color: #051122;
+    margin: 0%;
+}
+
+/*----------------------HEADER-------------------------*/
+header {
+    padding: 15%;
+    text-align: center;
+    /*background-color: #0b2242;*/
+    /* background-image: url("fondo1.jpg");*/
+    background-image: url("fondo2.jpg");
+    background-position: center;
+}
+
+header h1 {
+    font-size: 90px;
+    color: white;
+}
+
+/*----------------------NAVEGADOR-------------------------*/
+nav {
+    overflow: hidden;
+    background-color: #051122;
+    /*position:fixed;*/
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: grey;
+}
+
+/*----------------------SECTION h1-------------------------*/
+.section_h1 {
+    padding-left: 30px;
+    font-size: 10px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 25px 50px -12px rgba(245, 242, 242, 0.25);
+
+}
+
+.section_h1 h1 {
+    padding: 10px;
+}
+
+/*----------------------SECTION CINES-------------------------*/
+#section_cines {
+    content: "";
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.cines {
+    display: inline-block;
+    padding: 30px;
+    width: 20%;
+    /* border: 1px solid black;*/
+}
+
+.cines h1 {
+    padding: 15px;
+}
+
+.cines a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+.cines a:hover {
+    color: grey;
+}
+
+#cines_img {
+    width: 100%;
+    /* height: 100%;*/
+    border-radius: 2%;
+}
+
+/*----------------------SECTION PELICULAS-------------------------*/
+#section_pelis {
+    display: inline-block;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.peliculas {
+    display: inline-block;
+    /*background-color: white;*/
+    border-radius: 2%;
+    /*box-shadow: 0px 0px 25px #222;*/
+    padding: 20px;
+    width: 20%;
+    height: 550px;
+    margin: 1%;
+}
+
+.peliculas h1 {
+    padding: 20px;
+}
+
+.pelicula_img {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+.precio {
+    padding: 20px;
+    color: #ffffff;
+}
+
+/*-----------------------ENQUESTA-----------------------*/
+#section_contacte{
+    color: white;
+    width: 100%;
+    display: flex;
+    /*text-align: center;*/
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+form{
+    width: 35%;
+    height: 8%;
+}
+form p{
+    margin: 10px;
+  }
+textarea{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 500px;
+    height: 200px;
+}
+/*----------------------FOOTER-------------------------*/
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #0a1c3a;
+    color: white;
+}
+
+footer div {
+    padding-top: 20px;
+}
+
+
+@font-face {
+    font-family: "SFUIText-Medium";
+     src: url("fonts/SanFrancisco/SFUIText-Medium.otf") format("OpenType");
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
