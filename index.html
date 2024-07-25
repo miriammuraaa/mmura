@@ -8,46 +8,190 @@
     <link rel="stylesheet" href="ProyectoMiriam/indexcss.css" type="text/css">
     <link rel="icon" type="icon" href="ProyectoMiriam/img/favicon.png">
     <title>Miriam Murà Calamardo</title>
-    <style>
-        /* Estilos CSS para posicionar las imágenes */
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden; /* Para evitar barras de desplazamiento */
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        }
-
-        .image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Para que las imágenes mantengan su proporción de aspecto */
-        }
-
-        @media (max-width: 768px) {
-            /* Cambiar el diseño para pantallas pequeñas */
-            .container {
-                flex-direction: column; /* Apilar las imágenes verticalmente */
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Imagen a la derecha -->
-        <img class="image" src="photo_2024-04-22_17-12-48.jpg" alt="Descripción de la imagen">
-        <!-- GIF a la izquierda -->
-        <iframe class="image" src="https://giphy.com/embed/xMGh0bajSyNdC" frameborder="0"></iframe>
-    </div>
+    <header>
+        <h1>Miriam Murà Calamardo</h1>
+        <h3>INFORMATION TECHNOLOGY</h3>
+    </header>
+
+    <section>
+        <section id="section_portfolio">
+            <article>
+                <h2>Portfolio</h2>
+
+                <nav class="topnav" id="myTopnav">
+                    <a href="#section_aboutme" class="active">About me</a>
+                    <a href="#section_cv">CV</a>
+                    <a href="#section_projectsSMIX">SMIX Projects</a>
+                    <a href="#section_projectsDAM">DAM Projects</a>
+                    <a href="#section_contact">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+
+                </nav>
+
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
+
+
+            </article>
+        </section>
+
+
+        <section id="section_aboutme">
+            <article id="aboutme">
+
+                <h2>About Me</h2>
+
+                <p>Hi, I'm Miriam Murà Calamardo. I'm 18 years old and was born on October 23, 2004 in Olesa de
+                    Montserrat.
+                    I've always been passionate about technology, which is why I decided to study microcomputer
+                    systems
+                    and
+                    networks in a middle degree. Currently, I'm pursuing a higher degree in multi-platform
+                    application
+                    development at the Castellet Institute in Sant Vicenç de Castellet.</p>
+
+                <p> I enjoy focusing on programming and software development, and I'm working hard to build my
+                    career in
+                    this constantly evolving field. I'm very excited about everything I can learn and achieve in
+                    the
+                    future.
+                </p>
+
+                <div id="social">
+                    <a href="https://github.com/miriammuraaa" target="_blank"><img
+                            src="ProyectoMiriam/img/social/github.png" alt="GitHub"></a>
+                    <a href="http://www.infojobs.net/miriam-mura-calamardo.prf" target="_blank"><img
+                            src="ProyectoMiriam/img/social/infojobs.png" alt="Infojobs"></a>
+                    <a href="https://www.linkedin.com/in/miriam-murà-calamardo-52770825a/" target="_blank"><img
+                            src="ProyectoMiriam/img/social/linkedin.png" alt="linkedin"></a>
+                </div>
+
+            </article>
+        </section>
+
+        <section id="section_cv">
+            <article id="cv">
+
+                <h2>My Resume</h2>
+                <a href="https://drive.google.com/file/d/1uB0-ZBibFeU217BNnPl42IFnosRggkcM/view?usp=sharing"
+                    target="_blank" class="button">CV</a>
+
+            </article>
+        </section>
+
+        <section id="section_projectsSMIX">
+            <article id="projectsSMIX">
+
+                <h2>SMIX Projects</h2>
+                <a href="https://drive.google.com/file/d/1oF7-GUNFHNf3V8RiQJRci0A9k4JbO0wT/view?usp=sharing"
+                    target="_blank" class="button">Synthesis Work</a>
+
+            </article>
+        </section>
+
+        <section id="section_projectsDAM">
+            <article id="projectsDAM">
+
+                <h2 id="textdam">DAM Projects</h2>
+                <div><a href="./Ex1/ex1MiriamMura.html" target="_blank"><img src="ProyectoMiriam/img/exercici1.png"
+                            alt="Exercici1"></a>
+                    <h3>Exercicice 1</h3>
+                    <p>Website of a Cinema</p>
+                </div>
+                <div><a href="./Ex2/musicBox_MiriamMura.html" target="_blank"><img
+                            src="ProyectoMiriam/img/exercici2.png" alt="Exercici2"></a>
+                    <h3>Exercicice 2</h3>
+                    <p>Deftones band website</p>
+                </div>
+                <div><a href="./Ex3/ViladomsDeDalt2.html" target="_blank"><img src="ProyectoMiriam/img/exercici3.png"
+                            alt="Exercici3"></a>
+                    <h3>Exercicice 3</h3>
+                    <p>Viladoms de Dalt, Castellbell i el Vilar Web Site</p>
+                </div>
+                <div><a href="./Ex4/HTMLwakamole_MiriamMura.html" target="_blank"><img src="ProyectoMiriam/img/whac-a-mole.png"
+                            alt="Exercici4"></a>
+                    <h3>Exercicice 4</h3>
+                    <p>Whac-A-Mole</p>
+                </div>
+                <div><a href="./Ex5/html_quiz.html" target="_blank"><img src="ProyectoMiriam/img/Ex5.png"
+                            alt="Exercici5"></a>
+                    <h3>Exercicice 5</h3>
+                    <p>QUIZ</p>
+                </div>
+                <div><a href="./MuseuHTML/museu.html" target="_blank"><img src="ProyectoMiriam/img/museu.png"
+                            alt="Museu"></a>
+                    <h3>Gimnàs virtual</h3>
+                    <p>Realitat virtual Miriam & Enric</p>
+                </div>
+                <div><a href="https://youtu.be/6OQKthImM8U?si=0MsLKcGR0-hMjjdQ" target="_blank"><img src="ProyectoMiriam/img/bot.png"
+                            alt="Bot Telegram"></a>
+                    <h3>Bot Telegram</h3>
+                    <p>Yarií Soto, Damian Pulido i Miriam Murà</p>
+                </div>
+            </article>
+        </section>
+        <section id="section_contact">
+            <h2>Have any Questions?</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">SEND</button>
+                </div>
+            </form>
+        </section>
+
+    </section>
+
+    <footer>
+        <div id="global">
+            <a href="https://drive.google.com/file/d/1uB0-ZBibFeU217BNnPl42IFnosRggkcM/view?usp=sharing"
+                target="_blank">
+                <p>CV</p>
+            </a>
+            <a href="https://drive.google.com/file/d/1oF7-GUNFHNf3V8RiQJRci0A9k4JbO0wT/view?usp=sharing"
+                target="_blank">
+                <p>SYNTHESIS WORK</p>
+            </a>
+            <a href="https://github.com/miriammuraaa" target="_blank">
+                <p>GITHUB</p>
+            </a>
+            <a href="https://www.linkedin.com/in/miriam-murà-calamardo-52770825a/" target="_blank">
+                <p>LINKEDIN</p>
+            </a>
+            <a href="http://www.infojobs.net/miriam-mura-calamardo.prf" target="_blank">
+                <p>INFOJOBS</p>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                <p>muraclamardo@gmail.com</p>
+            </a>
+        </div>
+        <div id="copy">
+            <p>&copy;2023 | Miriam Murà Calamardo</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
